@@ -3,7 +3,7 @@
 <section class="hero">
   <div class="hero-content">
     <div class="hero-text">
-      <h1>Bienvenue sur la Plateforme Étudiants</h1>
+      <h1>Bienvenue sur la Plateforme Étudiants+ </h1>
       <p>Apprenez à votre rythme, pratiquez vos compétences et discutez avec notre chatbot intelligent.</p>
       <div class="hero-buttons">
         <a href="pages/chatbot.py" class="button">Parler au Chatbot</a>
@@ -49,11 +49,11 @@
         </div>
         <div class="card">
             <h3>Data Cleaning et Préparation</h3>
-            <p>Techniques pour préparer vos données pour l’analyse.</p>
+            <p>Techniques pour préparer vos données pour l'analyse.</p>
         </div>
         <div class="card">
             <h3>Introduction au Machine Learning</h3>
-            <p>Concepts de base du ML et création d’un modèle simple.</p>
+            <p>Concepts de base du ML et création d'un modèle simple.</p>
         </div>
     </div>
 </section>

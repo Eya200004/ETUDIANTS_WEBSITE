@@ -9,7 +9,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
-    color: #333;
+    color: black;
     line-height: 1.6;
 }
 
@@ -89,12 +89,16 @@ section p { max-width: 800px; margin: 0 auto 40px auto; font-size: 1.2rem; color
 
 .hero-text h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  margin-right: 30px;
 }
 
 .hero-text p {
   font-size: 1.3rem;
   margin-bottom: 30px;
+  color: #585758ff; 
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
 }
 
 .hero-buttons {
@@ -126,7 +130,6 @@ section p { max-width: 800px; margin: 0 auto 40px auto; font-size: 1.2rem; color
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* Toutes les images superposées */
 .hero-slider img {
   position: absolute;
   width: 100%;
@@ -201,6 +204,7 @@ footer {
     padding: 40px;
     font-size: 0.9rem;
 }
+
 </style>
 </head>
 <body>
