@@ -1,12 +1,27 @@
 <?php include("includes/header.php"); ?>
 
 <section class="hero">
-    <h1>Bienvenue sur la Plateforme Étudiants </h1>
-    <p>Apprenez à votre rythme, pratiquez vos compétences et discutez avec notre chatbot intelligent.</p>
-    <a href="pages/cours.php" class="button">Voir les cours</a>
-    <a href="pages/exercice.php" class="button">Faire des exercices</a>
-    <a href="pages/chatbot.py" class="button">Parler au Chatbot</a>
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Bienvenue sur la Plateforme Étudiants</h1>
+      <p>Apprenez à votre rythme, pratiquez vos compétences et discutez avec notre chatbot intelligent.</p>
+      <div class="hero-buttons">
+        <a href="pages/chatbot.py" class="button">Parler au Chatbot</a>
+      </div>
+    </div>
+
+    <div class="hero-slider">
+
+        <img src="photos/student.jpg" alt="Étudiant 2">      
+        <img src="photos/etudiant2.webp" alt="Étudiant 2">
+        <img src="photos/student2.jpg" alt="Étudiant 3">
+        <img src="photos/student1.jpg" alt="Étudiant 2">
+    
+    </div>
+
+  </div>
 </section>
+
 
 <section class="about">
     <h2>À propos de nous</h2>
@@ -43,11 +58,5 @@
     </div>
 </section>
 
-
-<section class="chatbot-section">
-    <h2>Notre Chatbot 🤖</h2>
-    <p>Posez vos questions et obtenez des réponses instantanées pour vous aider à apprendre plus efficacement.</p>
-    <a href="pages/chatbot.py" class="button">Essayer le Chatbot</a>
-</section>
 
 <?php include("includes/footer.php"); ?>

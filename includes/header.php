@@ -64,15 +64,104 @@ section p { max-width: 800px; margin: 0 auto 40px auto; font-size: 1.2rem; color
 
 /*HERO */
 .hero {
-    background: linear-gradient(135deg, #8C7BFF, #6C63FF);
-    color: white;
-    padding: 200px 20px;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background: linear-gradient(135deg, #8C7BFF, #6C63FF);
+  color: white;
+  padding: 150px 40px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero h1 { font-size: 3rem; margin-bottom: 20px; }
-.hero p { font-size: 1.5rem; margin-bottom: 40px; }
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
 
+.hero-text {
+  flex: 1 1 500px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+ justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  background: white;
+  color: #6C63FF;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #f5f3ff;
+  transform: translateY(-3px);
+}
+
+
+.hero-slider {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Toutes les images superposées */
+.hero-slider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fade 24s infinite ease-in-out;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  5% { opacity: 1; }   
+  25% { opacity: 1; }  
+  30% { opacity: 0; }  
+  100% { opacity: 0; } 
+}
+
+
+.hero-slider img:nth-child(1) { animation-delay: 0s; }
+.hero-slider img:nth-child(2) { animation-delay: 6s; }
+.hero-slider img:nth-child(3) { animation-delay: 12s; }
+.hero-slider img:nth-child(4) { animation-delay: 18s; }
+
+@media (max-width: 900px) {
+  .hero-slider {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+
+/* about */
 .about {
     background: #fff;
 }
@@ -103,7 +192,6 @@ section p { max-width: 800px; margin: 0 auto 40px auto; font-size: 1.2rem; color
 .card h3 { color: #6C63FF; margin-bottom: 15px; font-size: 1.3rem; }
 .card p { font-size: 0.95rem; color: #555; }
 
-.chatbot-section { background:#fff; }
 
 /* footer */
 footer {
@@ -120,10 +208,11 @@ footer {
     <div class="logo">🎓 Étudiants+</div>
     <nav>
         <ul>
-            <li><a href="/index.php">Accueil</a></li>
-            <li><a href="/pages/cours.php">Cours</a></li>
-            <li><a href="/pages/exercice.php">Exercices</a></li>
-            <li><a href="/pages/chatbot.py">Chatbot</a></li>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="pages/cours.php">Cours</a></li>
+            <li><a href="pages/exercice.php">Exercices</a></li>
+            <li><a href="pages/chatbot.py">Chatbot</a></li>
         </ul>
     </nav>
 </header>
+</body>
